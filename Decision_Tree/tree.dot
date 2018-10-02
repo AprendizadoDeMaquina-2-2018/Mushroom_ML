@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="odor_n <= 0.5\nentropy = 0.999\nsamples = 5686\nvalue = [2940, 2746]\nclass = edible"] ;
+1 [label="bruises_t <= 0.5\nentropy = 0.667\nsamples = 3219\nvalue = [560, 2659]\nclass = poisonous"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 2277\nvalue = [0, 2277]\nclass = poisonous"] ;
+1 -> 2 ;
+3 [label="odor_f <= 0.5\nentropy = 0.974\nsamples = 942\nvalue = [560, 382]\nclass = edible"] ;
+1 -> 3 ;
+4 [label="odor_p <= 0.5\nentropy = 0.802\nsamples = 741\nvalue = [560, 181]\nclass = edible"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 560\nvalue = [560, 0]\nclass = edible"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 181\nvalue = [0, 181]\nclass = poisonous"] ;
+4 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 201\nvalue = [0, 201]\nclass = poisonous"] ;
+3 -> 7 ;
+8 [label="spore-print-color_r <= 0.5\nentropy = 0.22\nsamples = 2467\nvalue = [2380, 87]\nclass = edible"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="stalk-surface-below-ring_y <= 0.5\nentropy = 0.094\nsamples = 2409\nvalue = [2380, 29]\nclass = edible"] ;
+8 -> 9 ;
+10 [label="cap-surface_g <= 0.5\nentropy = 0.029\nsamples = 2373\nvalue = [2366, 7]\nclass = edible"] ;
+9 -> 10 ;
+11 [label="entropy = 0.014\nsamples = 2369\nvalue = [2366, 3]\nclass = edible"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = poisonous"] ;
+10 -> 12 ;
+13 [label="ring-number_o <= 0.5\nentropy = 0.964\nsamples = 36\nvalue = [14, 22]\nclass = poisonous"] ;
+9 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 14\nvalue = [14, 0]\nclass = edible"] ;
+13 -> 14 ;
+15 [label="entropy = 0.0\nsamples = 22\nvalue = [0, 22]\nclass = poisonous"] ;
+13 -> 15 ;
+16 [label="entropy = 0.0\nsamples = 58\nvalue = [0, 58]\nclass = poisonous"] ;
+8 -> 16 ;
+}
