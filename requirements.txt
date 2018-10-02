@@ -8,3 +8,4 @@ prompt_toolkit==2.0.4
 graphviz==0.9
 pydotplus==2.0.2
 ipython==7.0.1
+profilehooks==1.10.0
